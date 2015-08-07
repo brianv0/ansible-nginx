@@ -1,5 +1,5 @@
 server {
-    server_name: {{ svr.server_name }};
+    server_name {{ svr.server_name }};
 {% for k,v in svr.iteritems() %}
 {% if k.find('locations') == -1 and k != 'server_name' %}
     {{ k }} {{ v }};
