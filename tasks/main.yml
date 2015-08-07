@@ -1,0 +1,5 @@
+# file: nginx/tasks/main.yml
+
+- include: directories.yml
+- include: configure.yml
+- include: sites.yml

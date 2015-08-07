@@ -1,0 +1,6 @@
+# file: nginx/tasks/package.yml
+
+- name: Nginx | Make sure nginx is installed (package)
+  yum:
+    name: nginx16-nginx
+    state: present
