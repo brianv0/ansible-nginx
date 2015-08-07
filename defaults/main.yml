@@ -3,7 +3,7 @@
 nginx_user: nginx
 nginx_group: null
 
-nginx_dir: "/slac/nginx"
+nginx_dir: "/opt/rh/nginx16/root/etc/nginx"
 nginx_log_dir: "/var/log/nginx16"
 nginx_pid: "/opt/rh/nginx16/root/var/run/nginx/nginx.pid"
 
