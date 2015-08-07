@@ -1,0 +1,13 @@
+svr:
+  server_name: "srs.slac.stanford.edu"
+  listen: 8080
+  
+  locations:
+    
+    - host: "http://scalnx-v01.slac.stanford.edu:8180"
+      apps:
+
+      - path: /
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataCatalog
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"

@@ -1,0 +1,174 @@
+svr:
+  server_name: "glast-ground.slac.stanford.edu"
+  listen: 8080
+  
+  locations:
+    
+    - host: "http://glast-tomcat01.slac.stanford.edu:8180"
+      apps:
+
+      - path: /
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /Commons
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /GenericRegistration
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /GroupManager
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ImageHandler
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ServerMapping
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ServerMonitoring
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /admin.jsp
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /cas-srs
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /cas-srs-test
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /index.jsp
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /menuBar.jsp
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /robots.txt
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat02.slac.stanford.edu:8180"
+      apps:
+
+      - path: /DC2EventFinder
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /Decorator
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /SiliconDetectorWeb
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /cruisecontrol
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /hudson
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat04.slac.stanford.edu:8180"
+      apps:
+
+      - path: /Entries
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /elog
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat05.slac.stanford.edu:8180"
+      apps:
+
+      - path: /DownloadManager
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /Resources
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /SConsInstaller
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ShiftSchedule
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /SpBureau
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat06.slac.stanford.edu:8180"
+      apps:
+
+      - path: /CrossTrending
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataQualityMonitoring
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /HistoryProcessing
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /RunQuality
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /SystemTests
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /rm2
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /trending
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat08.slac.stanford.edu:8180"
+      apps:
+
+      - path: /DataCatalog
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /gds-sc2
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat09.slac.stanford.edu:8180"
+      apps:
+
+      - path: /DataPortal
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalAstro
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalAstroServer
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalHistory
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalSimpleSkimmer
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalWired
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /DataPortalWiredBeta
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /Pipeline-II
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /Visitors
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /releasemanager
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat10.slac.stanford.edu:8180"
+      apps:
+
+      - path: /APIDStats
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ASPDataViewer
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /FAVA
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /FCWebView
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /ISOCLogging
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /LATBA
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /LatSourceCatalog
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /MPWebView
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /TelemetryMonitor
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /TelemetryTableWebUI
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /TimelineTLD
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /WebConfigBrowser
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat11.slac.stanford.edu:8180"
+      apps:
+
+      - path: /DataProcessing
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /docs
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /glossary
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /maven
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /maven2
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /svn
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+
+    - host: "http://glast-tomcat12.slac.stanford.edu:8180"
+      apps:
+
+      - path: /Reports
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+      - path: /TelemetryTrending
+        include: "/opt/rh/nginx16/root/etc/nginx/conf.d/default_reverse_proxy.inc"
+

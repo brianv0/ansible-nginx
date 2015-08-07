@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+
+  vars_files:
+    - 'defaults/main.yml'
+
+  roles:
+    - { role: nginx, site: 'glast-ground.slac.stanford.edu'}
+    - { role: nginx, site: 'srs.slac.stanford.edu'}

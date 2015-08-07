@@ -1,0 +1,11 @@
+# file: nginx/meta/main.yml
+
+galaxy_info:
+  author: pjan vandaele
+  company: ANXS
+  description: Install and configure Nginx
+  min_ansible_version: 1.4
+  license: MIT
+  categories:
+  - system
+

@@ -1,0 +1,6 @@
+# file: nginx/tasks/main.yml
+
+- include_vars: '../sites/{{site}}.yml'
+- include: directories.yml
+- include: configure.yml
+- include: sites.yml

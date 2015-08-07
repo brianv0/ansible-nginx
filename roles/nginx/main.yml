@@ -1,0 +1,14 @@
+---
+- hosts: all
+  vars_files:
+    - 'defaults/main.yml'
+
+  tasks:
+    - include: 'tasks/main.yml' sites=["glast-ground.slac.stanford.edu", "srs.slac.stanford.edu"]
+
+#  handlers:
+#    - name: restart monit
+#      service:
+#        name: monit
+#        state: restarted
+#    - include: 'handlers/main.yml'
