@@ -5,5 +5,5 @@
     - 'defaults/main.yml'
 
   roles:
-    - { role: nginx, site: 'glast-ground.slac.stanford.edu'}
-    - { role: nginx, site: 'srs.slac.stanford.edu'}
+    - { role: nginx, site: 'glast-ground.slac.stanford.edu', sitedir: "./sites"}
+    - { role: nginx, site: 'srs.slac.stanford.edu', sitedir: "./sites"}
